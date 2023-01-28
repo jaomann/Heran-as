@@ -1,0 +1,14 @@
+C:\Users\João Emanuel\source\repos\Herança\bin\Debug\netcoreapp3.1\Herança.exe
+C:\Users\João Emanuel\source\repos\Herança\bin\Debug\netcoreapp3.1\Herança.deps.json
+C:\Users\João Emanuel\source\repos\Herança\bin\Debug\netcoreapp3.1\Herança.runtimeconfig.json
+C:\Users\João Emanuel\source\repos\Herança\bin\Debug\netcoreapp3.1\Herança.runtimeconfig.dev.json
+C:\Users\João Emanuel\source\repos\Herança\bin\Debug\netcoreapp3.1\Herança.dll
+C:\Users\João Emanuel\source\repos\Herança\bin\Debug\netcoreapp3.1\Herança.pdb
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.csproj.AssemblyReference.cache
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.AssemblyInfoInputs.cache
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.AssemblyInfo.cs
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.csproj.CoreCompileInputs.cache
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.dll
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.pdb
+C:\Users\João Emanuel\source\repos\Herança\obj\Debug\netcoreapp3.1\Herança.genruntimeconfig.cache
