@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Herança
+﻿namespace Herança
 {
-    class funcionário
+    class Funcionario
     {
         public string Nome { get; set; }
         public double Horas { get; set; }
         public double ValorHora { get; set; }
 
-        public funcionário(string nome, double horas, double Vhora)
+        public Funcionario(string nome, double horas, double Vhora)
         {
             this.Nome = nome;
             this.Horas = horas;
