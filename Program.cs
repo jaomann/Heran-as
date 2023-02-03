@@ -6,51 +6,48 @@ namespace Herança
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Deseja cadastrar quantos funcionários?");
-            int colabs = int.Parse(Console.ReadLine());
-            Funcionario[] colaboradores = new Funcionario[colabs];
-            for (int i = 0; i < colabs; i++)
+            bool run = true;
+            do
             {
-                Console.WriteLine("O funcionário a ser cadastrado é terceirizado?(1 para sim e 0 para não)");
-                double opt = double.Parse(Console.ReadLine());
-                string nome;
-                double horas;
-                double valorHora;
-                switch (opt) {
-                    case 0:
-
-                            Console.WriteLine("Informe o nome: ");
-                            nome = Console.ReadLine();
-                            Console.WriteLine("Horas trabalhadas no mês");
-                            horas = double.Parse(Console.ReadLine());
-                            Console.WriteLine("O valor de hora");
-                            valorHora = double.Parse(Console.ReadLine());
-                            Funcionario pessoa = new Funcionario(nome, horas, valorHora);
-                            colaboradores[i] = pessoa;
-                        break;
-
-                    case 1:
-                        
-                            Console.WriteLine("Informe o nome: ");
-                            nome = Console.ReadLine();
-                            Console.WriteLine("Horas trabalhadas no mês");
-                            horas = double.Parse(Console.ReadLine());
-                            Console.WriteLine("O valor de hora");
-                            valorHora = double.Parse(Console.ReadLine());
-                            pessoa = new FuncionarioTerceirizado(nome, horas, valorHora);
-                            colaboradores[i] = pessoa;
-                        break;
+                Console.WriteLine("Informe o primeiro e segundo número para a operação");
+                double num1 = double.Parse(Console.ReadLine());
+                double num2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("Qual operação deseja fazer?\n1-soma.\n2-subtracao.\n3-multiplicacao.\n4-divisao.");
+                int op = int.Parse(Console.ReadLine());
+                if (op == 1)
+                {
+                    Calculadora calc1 = new Calculadora(num1, num2);
+                    double result = calc1.Soma(num1, num2);
+                    Console.WriteLine($"O resultado é: {result}");
+                    Console.WriteLine(":)");
+                }
+                else if (op == 2)
+                {
+                    Calculadora calc1 = new Calculadora(num1, num2);
+                    double result = calc1.Subtracao(num1, num2);
+                    Console.WriteLine($"O resultado é: {result}");
+                    Console.WriteLine(":)");
+                }
+                else if (op == 3)
+                {
+                    Calculadora calc1 = new Calculadora(num1, num2);
+                    double result = calc1.Multiplicacao(num1, num2);
+                    Console.WriteLine($"O resultado é: {result}");
+                    Console.WriteLine(":)");
+                }
+                else if (op == 4)
+                {
+                    Calculadora calc1 = new Calculadora(num1, num2);
+                    double result = calc1.Divisao(num1, num2);
+                    Console.WriteLine($"O resultado é: {result}");
+                    Console.WriteLine(":)");
+                }
+                else
+                {
+                    run = false;
                 }
             }
-            for (int i = 0; i < colabs; i++)
-            {
-                Console.WriteLine($"---------Nome: {colaboradores[i].Nome}\n" +
-                    $"Horas trabalhadas: {colaboradores[i].Horas}\n" +
-                    $"Valor/Hora: {colaboradores[i].ValorHora}\n" +
-                    $"Salário: {colaboradores[i].salario()}" +
-                    $"---------\n");
-
-            }
+            while (run == true);
         }
     }
 }
